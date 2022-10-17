@@ -1,0 +1,22 @@
+class Mamalia {
+   public void move() {
+      System.out.println("Mamalia adalah jenis hewan menyusui");
+   }
+}
+
+class Kucing extends Mamalia {
+   public void move() {
+      System.out.println("Kucing sedang menyusui anaknya");
+   }
+}
+
+public class TestCat {
+
+   public static void main(String args[]) {
+      Mamalia a = new Mamalia(); 
+      Mamalia b = new Kucing(); 
+
+      a.move();   
+      b.move();  
+   }
+}
