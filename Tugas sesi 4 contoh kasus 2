@@ -1,0 +1,45 @@
+abstract class Binatang {
+ 
+    protected abstract void munculSuara();
+ 
+}
+ 
+class Sapi extends Binatang {
+    
+    @Override
+    protected void munculSuara() {
+        System.out.println("Suara Sapi : mo...mo..mo.");
+    }
+ 
+}
+ 
+class Ayam extends Binatang {
+ 
+    @Override
+    protected void munculSuara() {
+        System.out.println("Suara Ayam : tok-tok petok...tok-tok petok...tok-tok petok");
+   }
+}
+
+class Anjing extends Binatang {
+ 
+    @Override
+    protected void munculSuara() {
+        System.out.println("Suara Anjing : guk...guk...guk");
+   }
+}
+ 
+public class Tampil {
+ 
+    public static void main (String[] args) {
+        Binatang sapi = new Sapi();
+        sapi.munculSuara();
+    
+        Binatang ayam = new Ayam();
+        ayam.munculSuara();
+        
+        Binatang anjing = new Anjing();
+        anjing.munculSuara();
+    }
+ 
+}
