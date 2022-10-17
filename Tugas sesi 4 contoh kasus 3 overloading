@@ -1,0 +1,33 @@
+public class Contoh_kasus {
+  int Hitung_luasPersegi(int s){
+    int luasPer;
+    luasPer = s*s;
+    return luasPer;
+    }
+    double Hitung_luasSegitiga(int a, int t){
+      double luasSeg;
+      luasSeg = 0.5 * a * t;
+      return luasSeg;
+      }
+    double Hitung_luasLingkaran(double r){
+      double luasLing;
+      luasLing = 3.14 * r * r;
+      return luasLing;
+      }
+}
+       
+       
+public class Luas {
+  public static void main(String args[]){
+    int a = 2;
+    int t = 10;
+    int r = 20;
+   
+    int luasSeg; 
+    System.out.print("luasSeg : "+0.5 * a * t); 
+           
+    int luasLing; 
+    System.out.print("luasLing : "+3.14 * r * r); 
+    
+    }
+}
