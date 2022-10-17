@@ -1,0 +1,51 @@
+public class persegi {
+
+ double sisi;
+ 
+ 
+ persegi(double s){
+  this.sisi=s;
+ }
+
+ void luas(){
+  System.out.println("Luas persegi adalah "+this.sisi*this.sisi);
+ }
+ 
+ void luas(double s){
+  
+  this.sisi=s;
+  System.out.println("(overloading)Luas persegi adalah "+(this.sisi*this.sisi));
+ }
+ 
+ public static void main (String args[]) {
+  persegi A= new persegi(3);
+  kubus B= new kubus(3);
+  
+  A.luas();
+  B.luas();
+  System.out.println("");
+  System.out.println("");
+  
+  A.luas(5);
+  B.luas(5);
+  
+ }
+}
+class kubus extends persegi{
+
+  kubus(double s){
+   super(s);
+  }
+  
+  
+  void luas(){
+   
+   System.out.println("Luas permukaan kubus adalah "+6*this.sisi*this.sisi);
+  }
+  
+  void luas(double s){
+   this.sisi=s;
+   System.out.println("(overloading)Luas permukaan kubus adalah "+(6*this.sisi*this.sisi));
+  }
+}
+
